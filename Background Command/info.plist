@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.danielsh.alfred.bgcmd</string>
+	<key>connections</key>
+	<dict>
+		<key>D072E24D-D1A3-4077-BB94-815229259DA2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D3E9F12F-8E11-46BE-BE19-E105E4A87D0B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>D3E9F12F-8E11-46BE-BE19-E105E4A87D0B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6975C37C-6974-416E-9458-5EA445EF7877</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Daniel Shannon</string>
+	<key>description</key>
+	<string>Run commands in background.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Background Command</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Background Command</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>6975C37C-6974-416E-9458-5EA445EF7877</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>$</string>
+				<key>subtext</key>
+				<string>{query}</string>
+				<key>text</key>
+				<string>Run Command</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D072E24D-D1A3-4077-BB94-815229259DA2</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>shopt -s expand_aliases
+
+if [ -f "${HOME}/.bash_profile" ] ; then
+	source "${HOME}/.bash_profile"
+fi
+
+{query} 2&gt;&amp;1 &amp;</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D3E9F12F-8E11-46BE-BE19-E105E4A87D0B</string>
+		</dict>
+	</array>
+	<key>uidata</key>
+	<dict>
+		<key>6975C37C-6974-416E-9458-5EA445EF7877</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>D072E24D-D1A3-4077-BB94-815229259DA2</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>D3E9F12F-8E11-46BE-BE19-E105E4A87D0B</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://daniel.sh</string>
+</dict>
+</plist>

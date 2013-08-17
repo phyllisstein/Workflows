@@ -1,0 +1,276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D94BC4321702898100FEA0B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94BC4311702898100FEA0B8 /* Foundation.framework */; };
+		D94BC4351702898100FEA0B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D94BC4341702898100FEA0B8 /* main.m */; };
+		D94BC4391702898100FEA0B8 /* TagsWorkflow.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D94BC4381702898100FEA0B8 /* TagsWorkflow.1 */; };
+		D94C488817500C20002FFA69 /* TWMetadataTagger.m in Sources */ = {isa = PBXBuildFile; fileRef = D94C488717500C20002FFA69 /* TWMetadataTagger.m */; };
+		D94C488B1750259C002FFA69 /* TWFlagger.m in Sources */ = {isa = PBXBuildFile; fileRef = D94C488A1750259C002FFA69 /* TWFlagger.m */; };
+		D9617C2C17028B79000905AE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9617C2B17028B79000905AE /* AppKit.framework */; };
+		D9617C2E17028B7F000905AE /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9617C2D17028B7F000905AE /* ScriptingBridge.framework */; };
+		D9617C341702A7CC000905AE /* TWMetadataSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D9617C331702A7CC000905AE /* TWMetadataSearcher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D94BC42C1702898100FEA0B8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				D94BC4391702898100FEA0B8 /* TagsWorkflow.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D94BC42E1702898100FEA0B8 /* TagsWorkflow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TagsWorkflow; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94BC4311702898100FEA0B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D94BC4341702898100FEA0B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D94BC4371702898100FEA0B8 /* TagsWorkflow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TagsWorkflow-Prefix.pch"; sourceTree = "<group>"; };
+		D94BC4381702898100FEA0B8 /* TagsWorkflow.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TagsWorkflow.1; sourceTree = "<group>"; };
+		D94C488617500C20002FFA69 /* TWMetadataTagger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMetadataTagger.h; sourceTree = "<group>"; };
+		D94C488717500C20002FFA69 /* TWMetadataTagger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMetadataTagger.m; sourceTree = "<group>"; };
+		D94C48891750259C002FFA69 /* TWFlagger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFlagger.h; sourceTree = "<group>"; };
+		D94C488A1750259C002FFA69 /* TWFlagger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFlagger.m; sourceTree = "<group>"; };
+		D9617C2A17028B5C000905AE /* Finder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Finder.h; sourceTree = "<group>"; };
+		D9617C2B17028B79000905AE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D9617C2D17028B7F000905AE /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		D9617C321702A7CC000905AE /* TWMetadataSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMetadataSearcher.h; sourceTree = "<group>"; };
+		D9617C331702A7CC000905AE /* TWMetadataSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMetadataSearcher.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D94BC42B1702898100FEA0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9617C2E17028B7F000905AE /* ScriptingBridge.framework in Frameworks */,
+				D9617C2C17028B79000905AE /* AppKit.framework in Frameworks */,
+				D94BC4321702898100FEA0B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D94BC4251702898100FEA0B8 = {
+			isa = PBXGroup;
+			children = (
+				D94BC4331702898100FEA0B8 /* TagsWorkflow */,
+				D94BC4301702898100FEA0B8 /* Frameworks */,
+				D94BC42F1702898100FEA0B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D94BC42F1702898100FEA0B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D94BC42E1702898100FEA0B8 /* TagsWorkflow */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D94BC4301702898100FEA0B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9617C2D17028B7F000905AE /* ScriptingBridge.framework */,
+				D9617C2B17028B79000905AE /* AppKit.framework */,
+				D94BC4311702898100FEA0B8 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D94BC4331702898100FEA0B8 /* TagsWorkflow */ = {
+			isa = PBXGroup;
+			children = (
+				D94C488617500C20002FFA69 /* TWMetadataTagger.h */,
+				D94C488717500C20002FFA69 /* TWMetadataTagger.m */,
+				D94C48891750259C002FFA69 /* TWFlagger.h */,
+				D94C488A1750259C002FFA69 /* TWFlagger.m */,
+				D9617C321702A7CC000905AE /* TWMetadataSearcher.h */,
+				D9617C331702A7CC000905AE /* TWMetadataSearcher.m */,
+				D94BC4341702898100FEA0B8 /* main.m */,
+				D9617C2A17028B5C000905AE /* Finder.h */,
+				D94BC4381702898100FEA0B8 /* TagsWorkflow.1 */,
+				D94BC4361702898100FEA0B8 /* Supporting Files */,
+			);
+			path = TagsWorkflow;
+			sourceTree = "<group>";
+		};
+		D94BC4361702898100FEA0B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D94BC4371702898100FEA0B8 /* TagsWorkflow-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D94BC42D1702898100FEA0B8 /* TagsWorkflow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D94BC43C1702898100FEA0B8 /* Build configuration list for PBXNativeTarget "TagsWorkflow" */;
+			buildPhases = (
+				D94BC42A1702898100FEA0B8 /* Sources */,
+				D94BC42B1702898100FEA0B8 /* Frameworks */,
+				D94BC42C1702898100FEA0B8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TagsWorkflow;
+			productName = TagsWorkflow;
+			productReference = D94BC42E1702898100FEA0B8 /* TagsWorkflow */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D94BC4261702898100FEA0B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Daniel Shannon";
+			};
+			buildConfigurationList = D94BC4291702898100FEA0B8 /* Build configuration list for PBXProject "TagsWorkflow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D94BC4251702898100FEA0B8;
+			productRefGroup = D94BC42F1702898100FEA0B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D94BC42D1702898100FEA0B8 /* TagsWorkflow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D94BC42A1702898100FEA0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94BC4351702898100FEA0B8 /* main.m in Sources */,
+				D9617C341702A7CC000905AE /* TWMetadataSearcher.m in Sources */,
+				D94C488817500C20002FFA69 /* TWMetadataTagger.m in Sources */,
+				D94C488B1750259C002FFA69 /* TWFlagger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D94BC43A1702898100FEA0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D94BC43B1702898100FEA0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D94BC43D1702898100FEA0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TagsWorkflow/TagsWorkflow-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D94BC43E1702898100FEA0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TagsWorkflow/TagsWorkflow-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D94BC4291702898100FEA0B8 /* Build configuration list for PBXProject "TagsWorkflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D94BC43A1702898100FEA0B8 /* Debug */,
+				D94BC43B1702898100FEA0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D94BC43C1702898100FEA0B8 /* Build configuration list for PBXNativeTarget "TagsWorkflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D94BC43D1702898100FEA0B8 /* Debug */,
+				D94BC43E1702898100FEA0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D94BC4261702898100FEA0B8 /* Project object */;
+}

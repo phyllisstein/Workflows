@@ -1,0 +1,49 @@
+# DEVONthink Note Workflow for Alfred v2
+This workflow, which makes use of the [Alfred.framework][framework] project, adds a quick note to DEVONthink Pro. Enter `dtn` to dispaly a list of databases. Select one, then begin entering a query. While the query fuzzily matches any of your database's top-level groups, they'll be displayed and you can select one; once there are no more matches, the workflow kicks into note mode for the current database or group. Enter a note, either using a colon to separate the title and subtitle or letting the workflow choose a title and date stamp for you, then press `Return` to create it.
+
+## Source Documentation
+DEVONthink Note ably demonstrates several of the features of [Alfred.framework][framework]. In particular, it makes extensive use of the feedback and fuzzy-searching systems. Both use cases demonstrate how powerful these features can be without significantly adding to complexity. For example, coming up with a key block for a fuzzy search is a breeze, despite the size and complexity of our data set (the array containing a group's or database's children). Since we're just trying to get a searchable string, we can do this:
+
+``````objectivec
+AWWorkflow *aw = [[AWWorkflow alloc] init];
+NSArray *res = [aw fuzzySearchFor:self.query in:children withKeyBlock:^NSString *(id o) {
+    DEVONthinkRecord *obj = (DEVONthinkRecord *)o;
+    return [obj name];
+}];
+return res;
+```````````````````````````````````````````````````````````````````````````````````````````````
+
+The returned results array will contain every child record that provided a matching response to `- name`.
+
+The feedback behavior is probably even more transparent. We create a mutable array called `outObjects` early in the program (so it doesn't get stuck in a local namespace), then add an `AWFeedbackItem` to it whenever we need to. Then, just when we're ready to terminate the program, we call `AWWorkflow`'s `-flush:(BOOL) feedbackArray:(NSArray *)` with it.
+
+```````objectivec
+#import <Foundation/Foundation.h>
+#import <Alfred/Alfred.h>
+// [...]
+
+int main(int argc, const char *argv[])
+{
+    NSMutableArray *outObjects = [NSMutableArray new];      // We declare it in our outermost level of nesting...
+    // [...]
+    
+    if (argc == 1 || [argv1 isEqualToString:@"")
+    {
+        for(NSString *n in dbNames)
+        {
+            NSString *acp = [NSString stringWithFormat:@"%@→", n];
+            NSString *st = [NSString stringWithFormat:@"Select a group in \"%@\"", n];
+            AWFeedbackItem *i = [AWFeedbackItem itemWithObjectsAndKeys:@NO, @"valid", acp, @"autocomplete", n, @"title", st, @"subtitle", dbIcon, @"icon", nil];
+            // ...so that this works, even from deep down here.
+
+            [outObjects addObject:i];
+        }
+    }
+````````````````````````````````````````````````````````````````````````````````````````````````
+
+## License
+Framework code by Daniel Shannon ([d@daniel.sh](d@daniel.sh)), 2013. This license may not be removed or altered. Alfred.framework is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/) license. This means that you may share and redistribute the package, but only for non-commercial purposes, only so long as you credit the original author---_moi_---and only if your derivative work is similarly licensed.
+
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+
+[framework]: https://github.com/phyllisstein/Alfred.framework "Github: Alfred.framework"

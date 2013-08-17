@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D95953611751755800AE14BF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95953601751755800AE14BF /* Cocoa.framework */; };
+		D959536B1751755800AE14BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D95953691751755800AE14BF /* InfoPlist.strings */; };
+		D9F82D8E1751DAB100A0042B /* Alfred.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F82D871751DAB100A0042B /* Alfred.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9F82D8F1751DAB100A0042B /* AWFeedbackItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F82D881751DAB100A0042B /* AWFeedbackItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D9F82D901751DAB100A0042B /* AWPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F82D891751DAB100A0042B /* AWPreferences.h */; };
+		D9F82D911751DAB100A0042B /* AWWorkflow.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F82D8A1751DAB100A0042B /* AWWorkflow.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D9F82D921751DAB100A0042B /* NSArray+FuzzySearching.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F82D8B1751DAB100A0042B /* NSArray+FuzzySearching.h */; };
+		D9F82D931751DAB100A0042B /* NSFileManager+AWFindOrCreate.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F82D8C1751DAB100A0042B /* NSFileManager+AWFindOrCreate.h */; };
+		D9F82D941751DAB100A0042B /* NSString+XMLEscaping.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F82D8D1751DAB100A0042B /* NSString+XMLEscaping.h */; };
+		D9F82D9D1751DAEA00A0042B /* Alfred.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F82D961751DAEA00A0042B /* Alfred.m */; };
+		D9F82D9E1751DAEA00A0042B /* AWFeedbackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F82D971751DAEA00A0042B /* AWFeedbackItem.m */; };
+		D9F82D9F1751DAEA00A0042B /* AWPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F82D981751DAEA00A0042B /* AWPreferences.m */; };
+		D9F82DA01751DAEA00A0042B /* AWWorkflow.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F82D991751DAEA00A0042B /* AWWorkflow.m */; };
+		D9F82DA11751DAEA00A0042B /* NSArray+FuzzySearching.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F82D9A1751DAEA00A0042B /* NSArray+FuzzySearching.m */; };
+		D9F82DA21751DAEA00A0042B /* NSFileManager+AWFindOrCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F82D9B1751DAEA00A0042B /* NSFileManager+AWFindOrCreate.m */; };
+		D9F82DA31751DAEA00A0042B /* NSString+XMLEscaping.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F82D9C1751DAEA00A0042B /* NSString+XMLEscaping.m */; };
+		D9F82DA91751DF6100A0042B /* LICENSE.mdown in Resources */ = {isa = PBXBuildFile; fileRef = D9F82DA71751DF6100A0042B /* LICENSE.mdown */; };
+		D9F82DAA1751DF6100A0042B /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = D9F82DA81751DF6100A0042B /* README.mdown */; };
+		D9F82DB01751E3DF00A0042B /* AWArgs.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F82DAF1751E3DF00A0042B /* AWArgs.h */; settings = {ATTRIBUTES = (); }; };
+		D9F82DB21751E3E600A0042B /* AWArgs.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F82DB11751E3E600A0042B /* AWArgs.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D959535D1751755800AE14BF /* Alfred.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alfred.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95953601751755800AE14BF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D95953631751755800AE14BF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D95953641751755800AE14BF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D95953651751755800AE14BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D95953681751755800AE14BF /* Alfred-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alfred-Info.plist"; sourceTree = "<group>"; };
+		D959536A1751755800AE14BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D959536C1751755800AE14BF /* Alfred-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alfred-Prefix.pch"; sourceTree = "<group>"; };
+		D9F82D871751DAB100A0042B /* Alfred.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Alfred.h; path = headers/Alfred.h; sourceTree = "<group>"; };
+		D9F82D881751DAB100A0042B /* AWFeedbackItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWFeedbackItem.h; path = headers/AWFeedbackItem.h; sourceTree = "<group>"; };
+		D9F82D891751DAB100A0042B /* AWPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWPreferences.h; path = headers/AWPreferences.h; sourceTree = "<group>"; };
+		D9F82D8A1751DAB100A0042B /* AWWorkflow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWWorkflow.h; path = headers/AWWorkflow.h; sourceTree = "<group>"; };
+		D9F82D8B1751DAB100A0042B /* NSArray+FuzzySearching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+FuzzySearching.h"; path = "headers/NSArray+FuzzySearching.h"; sourceTree = "<group>"; };
+		D9F82D8C1751DAB100A0042B /* NSFileManager+AWFindOrCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+AWFindOrCreate.h"; path = "headers/NSFileManager+AWFindOrCreate.h"; sourceTree = "<group>"; };
+		D9F82D8D1751DAB100A0042B /* NSString+XMLEscaping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+XMLEscaping.h"; path = "headers/NSString+XMLEscaping.h"; sourceTree = "<group>"; };
+		D9F82D961751DAEA00A0042B /* Alfred.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Alfred.m; path = implementation/Alfred.m; sourceTree = "<group>"; };
+		D9F82D971751DAEA00A0042B /* AWFeedbackItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWFeedbackItem.m; path = implementation/AWFeedbackItem.m; sourceTree = "<group>"; };
+		D9F82D981751DAEA00A0042B /* AWPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWPreferences.m; path = implementation/AWPreferences.m; sourceTree = "<group>"; };
+		D9F82D991751DAEA00A0042B /* AWWorkflow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWWorkflow.m; path = implementation/AWWorkflow.m; sourceTree = "<group>"; };
+		D9F82D9A1751DAEA00A0042B /* NSArray+FuzzySearching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+FuzzySearching.m"; path = "implementation/NSArray+FuzzySearching.m"; sourceTree = "<group>"; };
+		D9F82D9B1751DAEA00A0042B /* NSFileManager+AWFindOrCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+AWFindOrCreate.m"; path = "implementation/NSFileManager+AWFindOrCreate.m"; sourceTree = "<group>"; };
+		D9F82D9C1751DAEA00A0042B /* NSString+XMLEscaping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+XMLEscaping.m"; path = "implementation/NSString+XMLEscaping.m"; sourceTree = "<group>"; };
+		D9F82DA71751DF6100A0042B /* LICENSE.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.mdown; sourceTree = "<group>"; };
+		D9F82DA81751DF6100A0042B /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.mdown; sourceTree = "<group>"; };
+		D9F82DAF1751E3DF00A0042B /* AWArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWArgs.h; path = headers/AWArgs.h; sourceTree = "<group>"; };
+		D9F82DB11751E3E600A0042B /* AWArgs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWArgs.m; path = implementation/AWArgs.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D95953591751755800AE14BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95953611751755800AE14BF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D95953531751755800AE14BF = {
+			isa = PBXGroup;
+			children = (
+				D9F82DA71751DF6100A0042B /* LICENSE.mdown */,
+				D9F82DA81751DF6100A0042B /* README.mdown */,
+				D95953661751755800AE14BF /* Alfred */,
+				D959535F1751755800AE14BF /* Frameworks */,
+				D959535E1751755800AE14BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D959535E1751755800AE14BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D959535D1751755800AE14BF /* Alfred.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D959535F1751755800AE14BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D95953601751755800AE14BF /* Cocoa.framework */,
+				D95953621751755800AE14BF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D95953621751755800AE14BF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D95953631751755800AE14BF /* AppKit.framework */,
+				D95953641751755800AE14BF /* CoreData.framework */,
+				D95953651751755800AE14BF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D95953661751755800AE14BF /* Alfred */ = {
+			isa = PBXGroup;
+			children = (
+				D9F82DA41751DAF100A0042B /* implementation */,
+				D9F82D951751DAC800A0042B /* headers */,
+				D95953671751755800AE14BF /* Supporting Files */,
+			);
+			path = Alfred;
+			sourceTree = "<group>";
+		};
+		D95953671751755800AE14BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D95953681751755800AE14BF /* Alfred-Info.plist */,
+				D95953691751755800AE14BF /* InfoPlist.strings */,
+				D959536C1751755800AE14BF /* Alfred-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9F82D951751DAC800A0042B /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				D9F82DAF1751E3DF00A0042B /* AWArgs.h */,
+				D9F82D871751DAB100A0042B /* Alfred.h */,
+				D9F82D881751DAB100A0042B /* AWFeedbackItem.h */,
+				D9F82D891751DAB100A0042B /* AWPreferences.h */,
+				D9F82D8A1751DAB100A0042B /* AWWorkflow.h */,
+				D9F82D8B1751DAB100A0042B /* NSArray+FuzzySearching.h */,
+				D9F82D8C1751DAB100A0042B /* NSFileManager+AWFindOrCreate.h */,
+				D9F82D8D1751DAB100A0042B /* NSString+XMLEscaping.h */,
+			);
+			name = headers;
+			sourceTree = "<group>";
+		};
+		D9F82DA41751DAF100A0042B /* implementation */ = {
+			isa = PBXGroup;
+			children = (
+				D9F82DB11751E3E600A0042B /* AWArgs.m */,
+				D9F82D961751DAEA00A0042B /* Alfred.m */,
+				D9F82D971751DAEA00A0042B /* AWFeedbackItem.m */,
+				D9F82D981751DAEA00A0042B /* AWPreferences.m */,
+				D9F82D991751DAEA00A0042B /* AWWorkflow.m */,
+				D9F82D9A1751DAEA00A0042B /* NSArray+FuzzySearching.m */,
+				D9F82D9B1751DAEA00A0042B /* NSFileManager+AWFindOrCreate.m */,
+				D9F82D9C1751DAEA00A0042B /* NSString+XMLEscaping.m */,
+			);
+			name = implementation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D959535A1751755800AE14BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F82D8E1751DAB100A0042B /* Alfred.h in Headers */,
+				D9F82D8F1751DAB100A0042B /* AWFeedbackItem.h in Headers */,
+				D9F82D911751DAB100A0042B /* AWWorkflow.h in Headers */,
+				D9F82DB01751E3DF00A0042B /* AWArgs.h in Headers */,
+				D9F82D901751DAB100A0042B /* AWPreferences.h in Headers */,
+				D9F82D921751DAB100A0042B /* NSArray+FuzzySearching.h in Headers */,
+				D9F82D931751DAB100A0042B /* NSFileManager+AWFindOrCreate.h in Headers */,
+				D9F82D941751DAB100A0042B /* NSString+XMLEscaping.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D959535C1751755800AE14BF /* Alfred */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95953721751755800AE14BF /* Build configuration list for PBXNativeTarget "Alfred" */;
+			buildPhases = (
+				D95953581751755800AE14BF /* Sources */,
+				D95953591751755800AE14BF /* Frameworks */,
+				D959535A1751755800AE14BF /* Headers */,
+				D959535B1751755800AE14BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alfred;
+			productName = Alfred;
+			productReference = D959535D1751755800AE14BF /* Alfred.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D95953541751755800AE14BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Daniel Shannon";
+			};
+			buildConfigurationList = D95953571751755800AE14BF /* Build configuration list for PBXProject "Alfred" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D95953531751755800AE14BF;
+			productRefGroup = D959535E1751755800AE14BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D959535C1751755800AE14BF /* Alfred */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D959535B1751755800AE14BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D959536B1751755800AE14BF /* InfoPlist.strings in Resources */,
+				D9F82DA91751DF6100A0042B /* LICENSE.mdown in Resources */,
+				D9F82DAA1751DF6100A0042B /* README.mdown in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D95953581751755800AE14BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F82D9D1751DAEA00A0042B /* Alfred.m in Sources */,
+				D9F82D9E1751DAEA00A0042B /* AWFeedbackItem.m in Sources */,
+				D9F82D9F1751DAEA00A0042B /* AWPreferences.m in Sources */,
+				D9F82DA01751DAEA00A0042B /* AWWorkflow.m in Sources */,
+				D9F82DA11751DAEA00A0042B /* NSArray+FuzzySearching.m in Sources */,
+				D9F82DA21751DAEA00A0042B /* NSFileManager+AWFindOrCreate.m in Sources */,
+				D9F82DA31751DAEA00A0042B /* NSString+XMLEscaping.m in Sources */,
+				D9F82DB21751E3E600A0042B /* AWArgs.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D95953691751755800AE14BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D959536A1751755800AE14BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D95953701751755800AE14BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D95953711751755800AE14BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D95953731751755800AE14BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.2;
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alfred/Alfred-Prefix.pch";
+				INFOPLIST_FILE = "Alfred/Alfred-Info.plist";
+				INSTALL_PATH = ./;
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		D95953741751755800AE14BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.2;
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alfred/Alfred-Prefix.pch";
+				INFOPLIST_FILE = "Alfred/Alfred-Info.plist";
+				INSTALL_PATH = ./;
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D95953571751755800AE14BF /* Build configuration list for PBXProject "Alfred" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95953701751755800AE14BF /* Debug */,
+				D95953711751755800AE14BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D95953721751755800AE14BF /* Build configuration list for PBXNativeTarget "Alfred" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95953731751755800AE14BF /* Debug */,
+				D95953741751755800AE14BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D95953541751755800AE14BF /* Project object */;
+}
