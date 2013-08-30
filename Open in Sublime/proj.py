@@ -53,7 +53,7 @@ def find_projects():
         for match in alp.fuzzy_search(q, projectNames, key=lambda x: x[1]):
             path = match[0]
             title = match[1]
-            arg = match[3]
+            arg = match[2]
             items.append(I(title=title,
                             subtitle=path,
                             arg=arg,
